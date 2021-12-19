@@ -1,0 +1,67 @@
+!ВАЖНО!ВСЕГДА ПИСАТЬ СВЕРХУ ВНИЗ
+вызвать переменную- var(для дедов,не юзаем);let(норм,юзаем);const(имба,не изменяемая);
+пример let:
+let msg=5+5;
+alert(msg);
+пример let2:
+let msg;
+msg="";
+alert(msg);
+
+max js number=9007199254740991
+int-цифровое значение
+big int=number+n(1000000000n);
+
+prompt=input в html
+"()" в prompt=placeholder в html
+prompt пример:
+let age=prompt("Сколько лет",100);
+alert(`Тебе ${age}`);
+prompt пример2:
+let sn=prompt("Как ты?");
+alert(`у меня тоже ${sn}`);
+
+confirm=поле подтверждения с вариантами ок(true) и отмена(false)
+
+пример confirm:
+let sn=confirm("Ты лох");
+alert(sn);
+
+в "или" если есть + значит=true обозначение ||
+
+в "и" если есть - значит=false обозначение &&
+
+циклы while; do while; for(самый юзабельный);
+
+пример while:
+    let a=0
+    while(a<3) {
+        alert(a);
+        a++;
+    }
+
+пример do while:
+    let a=0
+    do {
+        alert(a);
+        a++;
+    } while(a<3);
+
+пример for:
+        let a =0
+        for(a; a<3; a++){
+          alert(a);  
+        }
+если задать переменную в цикле,то выводится он будет только там
+
+for(начало;условие;шаг);
+
+остановка цикла:break
+пример кастыльного калькулятора с break:
+        let sum=0
+        while(true){
+            let value= +prompt("Введите число")
+            if(!value) break;
+            sum += value;
+        }
+        alert(sum);
